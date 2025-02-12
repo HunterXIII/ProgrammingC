@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    float m;
-    scanf("%f", &m);
-    printf("%f Kbits/sec\n", m * 8388.608);
+    float mb, speed;
+    scanf("%f", &mb);
+    printf("%f Kbits/sec\n", mb * 8388.608 / speed);
 }
