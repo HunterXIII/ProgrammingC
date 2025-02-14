@@ -5,7 +5,7 @@ typedef enum {
     Gasoline, Diesel, Electric
 } Type_engine;
 
-const char *NameTypeEngine[3] = {"Gasoline", "Diesel", "Electric"};
+char *NameTypeEngine[3] = {"Gasoline", "Diesel", "Electric"};
 
 typedef struct {
     char brand[20];
