@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include "../../mylibraries/mystrings.h"
+#include "../../myfunctions/mystrings.h"
 
 typedef void (*handler)(char *str);
 
