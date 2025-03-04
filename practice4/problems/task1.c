@@ -53,7 +53,7 @@ int main() {
         if (strcmp(command, "exit") == 0) {
             return 0;
         }
-        scanf("%s", str);
+        scanf(" %99[^\n]", str);
 
         for (int i = 0; i < sizeof(cmdlist) / sizeof(Command); i++) {
             if (strcmp(command, cmdlist[i].name) == 0) {
