@@ -26,9 +26,7 @@ void reverse(char* str) {
     }
 };
 
-void execute(char* str, cmdpnt cmd) {
-    cmd(str);
-}
+
 
 typedef struct {
     char name[10];
@@ -57,7 +55,7 @@ int main() {
 
         for (int i = 0; i < sizeof(cmdlist) / sizeof(Command); i++) {
             if (strcmp(command, cmdlist[i].name) == 0) {
-                execute(str, cmdlist[i].cmd);
+                cmdlist[i].cmd(str);
                 flag = 0;
                 break;
             }
